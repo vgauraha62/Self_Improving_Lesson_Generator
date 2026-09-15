@@ -1,0 +1,116 @@
+# Python bytecode / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.venv*/
+env.bak/
+
+# Environment & secrets — keep example tracked
+.env
+.env.*
+!.env.example
+
+# Build / distribution
+dist/
+build/
+*.egg-info/
+*.egg
+*.so
+*.whl
+*.dist-info/
+.eggs/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# SQLite / Memory DB (WAL mode produces -wal/-shm)
+memory/*.db
+memory/*.db-wal
+memory/*.db-shm
+memory/*.db-journal
+memory/memory.db*
+*.db
+*.sqlite
+*.sqlite3
+
+# Outputs — per-run lessons (keep directory via .gitkeep if needed)
+outputs/**/*
+!outputs/.gitkeep
+!outputs/lessons/.gitkeep
+!outputs/traces/.gitkeep
+outputs/lessons/*.json
+outputs/traces/*
+
+# Output analysis — timestamped generated files (keep README)
+output_analysis/LESSON_*.md
+output_analysis/LESSON_*.json
+output_analysis/ANALYSIS_*.md
+output_analysis/ALL_RUNS_SUMMARY_*.md
+output_analysis/*.log
+!output_analysis/README.md
+
+# Cache — wiki_cache is SQLite table, not file cache; keep cache/*.py source
+.cache/
+*.cache
+
+# Jupyter / Notebooks — keep notebooks/*.ipynb source, ignore checkpoints only
+.ipynb_checkpoints/
+.notebooks/.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+*.out
+*.err
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# NLTK data (local, large)
+nltk_data/
+*.nltk_data
+
+# Torch / embeddings cache (optional deps)
+*.pth
+*.pt
+*.bin
+sentence_transformers_cache/
+transformers_cache/
+
+# Temp / misc
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.orig
